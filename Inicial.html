@@ -32,7 +32,7 @@
 <h2>Tabela de dados</h2>
 
 <table class="tabela" border="1" width="500">
-    <thead width="500">
+    <thead width="500" celspan="2">
         <tr bgcolor="blue">
             <td width="20%">Nome</td>
             <td width="20%">Sobrenome</td>
@@ -67,6 +67,52 @@
     </tbody>
     
 </table>
+
+
+
+<h2>Formularios</h2>
+
+<form method="post" action="inicial.html">
+
+    <label>Nome:</label> <br>
+        <input type="text" name="nome"><br>
+        <br>
+    <label>Senha:</label><br>
+        <input type="password" name="senha" class="" id=""><br>
+        <br>
+    <label>Genero:</label><br>
+        <input type="radio" name="genero">Masculino
+        <input type="radio" name="genero">Feminino
+        <input type="radio" name="genero">Outros <br>
+    <br>
+
+    <label>Estado</label>  <br>
+    <select name="Estado">
+        <option value="">Selecione</option>
+        <option value="SP">SP</option>
+        <option value="RJ">RJ</option>
+        <option value="MG">MG</option>
+    </select>
+    <br>    <br>
+
+    <label>Quais suas qualificaçoes?</label><br>
+        <input type="checkbox" name="qualificacoes">Excel
+        <input type="checkbox" name="qualificacoes">PHP
+        <input type="checkbox" name="qualificacoes">HTML
+        <br>
+        <br>
+
+        <label>Descreva aqui sua experiencia com programação:</label><br>
+        <br>   <br>
+        <textarea name="text" cols="30" rows="10"></textarea>
+        <br>
+        <p>Carregue seu CV</p>
+        <input type="file" name="arquivo">
+        <br>
+
+    
+
+</form>
 
 
 </body>
